@@ -1,0 +1,45 @@
+
+<svg width="197px" height="190px" viewBox="288 -190 197 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assess-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(288.000000, -190.000000)">
+        <circle id="Oval-Copy" fill="#FFD767" cx="98.5" cy="94.5" r="50.5"></circle>
+        <path d="M76,97.6493387 L90.2603627,114.730823 L120.257524,83" id="Path-3" stroke="#FFFFFF" stroke-width="6"></path>
+    </g>
+</svg>
+
+
+<svg width="197px" height="190px" viewBox="-1 -190 197 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Question-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1.000000, -190.000000)">
+        <circle id="Oval" fill="#FFD767" cx="98.5" cy="94.5" r="50.5"></circle>
+        <text id="?" font-family="Akkurat-Bold, Akkurat" font-size="55" font-weight="bold" fill="#FFFFFF">
+            <tspan x="84.145" y="116">?</tspan>
+        </text>
+    </g>
+</svg>
+
+
+<svg width="197px" height="190px" viewBox="-278 -190 197 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Network-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-278.000000, -190.000000)">
+        <g transform="translate(45.000000, 35.000000)">
+            <circle id="Oval-Copy-2" fill="#FFD767" cx="50.5" cy="50.5" r="50.5"></circle>
+            <circle id="Oval-2" fill="#FFFFFF" cx="34" cy="32" r="4"></circle>
+            <circle id="Oval-2-Copy" fill="#FFFFFF" cx="75.5" cy="42.5" r="6.5"></circle>
+            <circle id="Oval-2-Copy-2" fill="#FFFFFF" cx="52" cy="77" r="4"></circle>
+            <circle id="Oval-2-Copy-3" fill="#FFFFFF" cx="19" cy="60" r="2"></circle>
+            <circle id="Oval-2-Copy-5" fill="#FFFFFF" cx="52" cy="21" r="2"></circle>
+            <circle id="Oval-2-Copy-6" fill="#FFFFFF" cx="80" cy="73" r="2"></circle>
+            <circle id="Oval-2-Copy-4" fill="#FFFFFF" cx="42.5" cy="53.5" r="8.5"></circle>
+            <polyline id="Path-4" stroke="#FFFFFF" points="52.5863567 76.0650635 73.221026 42.3029486 33.71352 32 19 59.3861616 73.221026 43.6029341"></polyline>
+            <path d="M51.1746907,77.6130702 L34,33" id="Path-5" stroke="#FFFFFF"></path>
+            <polygon id="Path-6" stroke="#FFFFFF" stroke-width="0.5" points="51.7172589 21 80.0821918 72.8861352 19 59.8765809"></polygon>
+        </g>
+    </g>
+</svg>
