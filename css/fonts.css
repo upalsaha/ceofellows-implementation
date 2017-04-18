@@ -1,126 +1,126 @@
 /* Custom Font Definitions */
 
 @font-face {
-  font-family: 'ApercuPro';
-  src: url('../fonts/ApercuPro/ApercuPro-Bold-Italic.ttf');
+  font-family: 'ApercuPro-BoldItalic';
+  src: url('../fonts/ApercuPro/ApercuPro-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'ApercuPro';
+  font-family: 'ApercuPro-Italic';
   src: url('../fonts/ApercuPro/ApercuPro-Bold.ttf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ApercuPro';
+  font-family: 'ApercuPro-Italic';
   src: url('../fonts/ApercuPro/ApercuPro-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'ApercuPro';
-  src: url('../fonts/ApercuPro/ApercuPro-Light-Italic.ttf');
+  font-family: 'ApercuPro-LightItalic';
+  src: url('../fonts/ApercuPro/ApercuPro-LightItalic.ttf');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'ApercuPro';
+  font-family: 'ApercuPro-Light';
   src: url('../fonts/ApercuPro/ApercuPro-Light.ttf');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ApercuPro';
-  src: url('../fonts/ApercuPro/ApercuPro-Medium-Italic.otf');
+  font-family: 'ApercuPro-MediumItalic';
+  src: url('../fonts/ApercuPro/ApercuPro-MediumItalic.otf');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'ApercuPro';
+  font-family: 'ApercuPro-Medium';
   src: url('../fonts/ApercuPro/ApercuPro-Medium.ttf');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ApercuPro';
+  font-family: 'ApercuPro-Regular';
   src: url('../fonts/ApercuPro/ApercuPro-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-Black';
   src: url('../fonts/ArnhemPro/ArnhemPro-Black.otf');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-BlackItalic';
   src: url('../fonts/ArnhemPro/ArnhemPro-BlackItalic.otf');
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-Blond';
   src: url('../fonts/ArnhemPro/ArnhemPro-Blond.otf');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-BlondItalic';
   src: url('../fonts/ArnhemPro/ArnhemPro-BlondItalic.otf');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-Bold';
   src: url('../fonts/ArnhemPro/ArnhemPro-Bold.otf');
-  font-weight: 700;
+  /*font-weight: 700;*/
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-BoldItalic';
   src: url('../fonts/ArnhemPro/ArnhemPro-BoldItalic.otf');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-Normal';
   src: url('../fonts/ArnhemPro/ArnhemPro-Normal.otf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-NormalItalic';
   src: url('../fonts/ArnhemPro/ArnhemPro-NormalItalic.otf');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-SemiBold';
   src: url('../fonts/ArnhemPro/ArnhemPro-SemiBold.otf');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ArnhemPro';
+  font-family: 'ArnhemPro-SemiBoldItalic';
   src: url('../fonts/ArnhemPro/ArnhemPro-SemiBoldItalic.otf');
   font-weight: 600;
   font-style: italic;

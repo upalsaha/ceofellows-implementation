@@ -1,0 +1,136 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.header {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text {
+  float: left;
+  padding-left: 20px
+}
+
+.header-text-ceo {
+  font-family: 'ApercuPro-Light';
+  font-size: 18px;
+  color: #000000;
+}
+
+.header-text-fellows {
+  font-family: 'ApercuPro-Bold';
+  font-size: 18px;
+  color: #000000;
+}
+
+.header-hamburger {
+  font-size: 18px;
+  float: right;
+  padding-right: 20px;
+}
+
+.homepage-banner {
+  height: 405px;
+  background: rgba(0,0,0,0.50);
+}
+
+.homepage-banner-image {
+  position: absolute;
+  z-index: -1;
+  clip: rect(0px,500px,405px,0px);
+}
+
+.homepage-banner-text {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.homepage-banner-text > span {
+  color: #FFFFFF;
+  font-family: 'ApercuPro-Bold';
+  font-size: 28px;
+}
+
+.homepage-banner-button-wrapper {
+  padding-left: 18px;
+}
+
+.homepage-banner-button {
+  height: 50px;
+  width: 175px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'ApercuPro-Bold';
+  font-size: 28px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+.cosgrove-panel {
+  padding-top: 32px;
+  padding-bottom: 56px;
+}
+
+.cosgrove-panel-intro {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "ApercuPro-Regular";
+  font-size: 24px;
+}
+
+.cosgrove-panel-image {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  max-width: 280px;
+  display:block;
+  margin: auto;
+}
+
+.cosgrove-quote-text {
+  font-family: "ArnhemPro-BlondItalic";
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.cosgrove-quote-name-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cosgrove-quote-name {
+  font-family: "ApercuPro-Bold";
+  font-size: 16px;
+}
+
+.cosgrove-quote-title {
+  font-family: "ApercuPro-Regular";
+  font-size: 16px;
+}
+
+.motivational-banner {
+  height: 280px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #FFD767;
+  box-shadow: 0 0 4px 2px rgba(196,196,196,0.50);
+}
+
+.motivational-banner-text1, .motivational-banner-text2 {
+  padding-top: 15px;
+  font-size: 18px;
+  font-family: "ApercuPro-Bold";
+  color: #FFFFFF;
+}
+
+.fa-chevron-down {
+  color: #FFFFFF;
+}
