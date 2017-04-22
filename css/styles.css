@@ -9,7 +9,10 @@ a:visited, a:hover, a:active {
 }
 
 .header {
-  height: 75px;
+  position: fixed;
+  background: #FFFFFF;
+  width: 100%;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,6 +39,10 @@ a:visited, a:hover, a:active {
   font-size: 18px;
   float: right;
   padding-right: 20px;
+}
+
+.top {
+  height: 55px;
 }
 
 .homepage-banner {
