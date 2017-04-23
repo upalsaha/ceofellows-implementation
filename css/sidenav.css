@@ -1,0 +1,55 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #4A4A4A;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 23px 8px 23px 32px;
+    text-decoration: none;
+    font-family: "ApercuPro-Medium";
+    font-size: 24px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s
+}
+
+/*.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}*/
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 7px;
+    right: -8px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #FFFFFF;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  font-family: "ApercuPro-Regular";
+  font-size: 10px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  color: #9B9B9B;
+}
+
+#main {
+    transition: margin-right .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

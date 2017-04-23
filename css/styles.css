@@ -16,6 +16,7 @@ a:visited, a:hover, a:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .header-text {
@@ -53,7 +54,8 @@ a:visited, a:hover, a:active {
 .homepage-banner-image {
   position: absolute;
   z-index: -1;
-  clip: rect(0px,500px,405px,0px);
+  max-height: 405px;
+  /*clip: rect(100px,700px,705px,0px);*/
 }
 
 .homepage-banner-text {
@@ -225,16 +227,17 @@ a:visited, a:hover, a:active {
 .partners-picture {
   height: 220px;
   margin-bottom: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   overflow: hidden;
+  max-width: 280px;
   background: rgba(0,0,0,0.50);
 }
 
 .partners-picture-image {
   z-index: -1;
-  max-height: 220px;;
+  max-height: 220px;
   position: absolute;
 
 }
@@ -339,4 +342,53 @@ a:visited, a:hover, a:active {
   color: #FFFFFF;
   font-family: "ApercuPro-Light";
   font-size: 18px;
+}
+
+.about-title {
+  padding-top: 65px;
+  font-family: "ApercuPro-Bold";
+  font-size: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-jeff {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+.about-jeff-pic {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.about-jeff-name {
+  padding-top: 27px;
+  font-family: "ApercuPro-Bold";
+  font-size: 28px;
+}
+
+.about-jeff-icon-wrapper {
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
+
+.about-jeff-icon-link {
+  display: inline;
+  padding-right: 15px;
+}
+
+.about-jeff-text {
+  font-family: "ApercuPro-Regular";
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.about-jeff-text > span {
+  font-family: "ApercuPro-Bold";
 }
