@@ -202,7 +202,7 @@ a:visited, a:hover, a:active {
   font-size: 24px;
 }
 
-.cosgrove-panel-image {
+.cosgrove-panel-image-mobile {
   padding-top: 30px;
   padding-bottom: 35px;
   max-width: 280px;
@@ -213,12 +213,10 @@ a:visited, a:hover, a:active {
 .cosgrove-quote-text {
   font-family: "ArnhemPro-BlondItalic";
   font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 30px;
 }
 
-.cosgrove-quote-name-wrapper {
+.cosgrove-quote-wrapper {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -233,12 +231,53 @@ a:visited, a:hover, a:active {
   font-size: 16px;
 }
 
+@media (min-width: 768px) {
+  .cosgrove-panel {
+    min-height: 500px;
+  }
+
+  .cosgrove-panel-intro {
+    padding-bottom: 20px;
+  }
+
+  .cosgrove-panel-image-mobile {
+    display: none;
+  }
+
+  .cosgrove-panel-image-wrapper {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cosgrove-panel-image-desktop {
+    width: 300px;
+  }
+
+  .cosgrove-quote-wrapper {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cosgrove-panel {
+    padding-top: 100px;
+    min-height: 600px;
+    padding-left: 120px;
+    padding-right: 120px
+  }
+
+  .cosgrove-panel-image-wrapper {
+    padding-right: 100px
+  }
+
+}
+
 .motivational-banner {
   height: 280px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;;
   background: #FFD767;
   box-shadow: 0 0 4px 2px rgba(196,196,196,0.50);
 }
@@ -248,6 +287,26 @@ a:visited, a:hover, a:active {
   font-size: 18px;
   font-family: "ApercuPro-Bold";
   color: #FFFFFF;
+}
+
+.motivational-banner-text1 {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.motivational-banner-text2 {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+@media (min-width: 992px) {
+  .motivational-banner {
+    min-height: 500px;
+  }
+
+  .motivational-banner-text1, .motivational-banner-text2 {
+    font-size: 36px;
+  }
 }
 
 .fa-chevron-down {
@@ -286,6 +345,28 @@ a:visited, a:hover, a:active {
   margin: auto;
 }
 
+@media (min-width: 768px) {
+  .how-it-works-title {
+    padding: 0;
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .how-it-works > .yellow-divider {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .how-it-works-section-wrapper {
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .how-it-works-text {
+    font-size: 24px;
+  }
+}
+
 .bullet-points {
   background-color: #FFD767;
   padding-top: 45px;
@@ -304,6 +385,22 @@ a:visited, a:hover, a:active {
   font-family: "ApercuPro-Regular";
   font-size: 14px;
   color: #000000;
+}
+
+@media (min-width: 992px) {
+  .bullet-points {
+    padding-top: 75px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+  }
+  .bullet-points-list > li {
+    padding-top: 15px;
+    padding-left: 30px;
+  }
+  .bullet-points-list > li > span {
+    font-family: "ApercuPro-Bold";
+    font-size: 20px;
+  }
 }
 
 .partners {
