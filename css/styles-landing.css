@@ -5,7 +5,7 @@ html, body {
 
 a:visited, a:hover, a:active {
   color: #000000;
-  text-decoration: none;
+  text-decoration: underline;
   border-bottom:solid 1px transparent;
 }
 
@@ -416,6 +416,7 @@ a:visited, a:hover, a:active {
 
 .partners-description {
   padding-top: 23px;
+  padding-bottom: 50px;
 }
 
 .partners-description > p {
@@ -426,7 +427,7 @@ a:visited, a:hover, a:active {
 }
 
 .partners-picture {
-  height: 220px;
+  height: 280px;
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -436,9 +437,14 @@ a:visited, a:hover, a:active {
   background: rgba(0,0,0,0.50);
 }
 
+.partners-picture-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .partners-picture-image {
   z-index: -1;
-  max-height: 220px;
+  max-height: 280px;
   position: absolute;
 
 }
@@ -454,23 +460,140 @@ a:visited, a:hover, a:active {
 }
 
 .partners-picture-text.one {
-  margin-top: 25%;
-  margin-bottom: 25%;
+  margin-top: 35%;
+  margin-bottom: 35%;
 }
 
 .partners-picture-text.two {
-  margin-top: 12%;
-  margin-bottom: 12%;
+  margin-top: 18%;
+  margin-bottom: 18%;
 }
 
 .partners-picture-text.three {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 18%;
+  margin-bottom: 18%;
 }
 
 .partners-picture-text.four {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 26%;
+  margin-bottom: 26%;
+}
+
+@media (min-width: 576px) {
+  .partners {
+    padding-bottom: 100px;
+  }
+  .partners-picture-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .partners-picture {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .partners-picture {
+    height: 350px;
+    max-width: 350px;
+  }
+  .partners-picture-image {
+    max-height: 350px;
+  }
+  .partners-picture-text.one {
+    margin-top: 40%;
+    margin-bottom: 40%;
+  }
+
+  .partners-picture-text.two {
+    margin-top: 28%;
+    margin-bottom: 28%;
+  }
+
+  .partners-picture-text.three {
+    margin-top: 28%;
+    margin-bottom: 28%;
+  }
+
+  .partners-picture-text.four {
+    margin-top: 32%;
+    margin-bottom: 32%;
+  }
+}
+
+@media (min-width: 992px) {
+  .partners-title {
+    padding-left: 50px;
+    padding-right: 200px;
+    font-size: 36px;
+  }
+  .partners > .yellow-divider {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .partners-description > p {
+    font-size: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .partners-picture {
+    height: 420px;
+    max-width: 420px;
+  }
+  .partners-picture-image {
+    max-height: 420px;
+  }
+  .partners-picture-text {
+    font-size: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .partners-picture-text.three {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .partners-title {
+    font-size: 48px;
+  }
+  .partners-description > p {
+    font-size: 36px;
+  }
+  .partners-picture {
+    height: 470px;
+    max-width: 470px;
+  }
+  .partners-picture-image {
+    max-height: 470px;
+  }
+  .partners-picture-text {
+    font-size: 32px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .partners-picture-text.one {
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+
+  .partners-picture-text.two {
+    margin-top: 12%;
+    margin-bottom: 12%;
+  }
+
+  .partners-picture-text.three {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  .partners-picture-text.four {
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
 }
 
 .alpine-section {
@@ -485,9 +608,20 @@ a:visited, a:hover, a:active {
   padding-bottom: 34px;
 }
 
+.alpine-section-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
 .alpine-section-video > iframe {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  overflow: hidden;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
 }
 
 .alpine-section-logo {
@@ -513,6 +647,41 @@ a:visited, a:hover, a:active {
   font-size: 16px;
   color: #4A4A4A;
   padding-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  .alpine-section {
+    padding-bottom: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .alpine-section-carousel {
+    float: left;
+    width: 500px;
+    padding-right: 50px;
+  }
+  .alpine-section-logo {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .alpine-section-title {
+    font-size: 36px;
+  }
+  .alpine-section-carousel {
+    width: 600px;
+  }
+  .alpine-section-quote {
+    font-size: 30px;
+    padding-top: 0;
+  }
+  .alpine-section-quote-name {
+    font-size: 18px;
+  }
+  .alpine-section-quote-role {
+    font-size: 18px;
+  }
 }
 
 .end-section {
@@ -544,6 +713,35 @@ a:visited, a:hover, a:active {
   font-family: "ApercuPro-Light";
   font-size: 18px;
 }
+
+.end-section-copyright {
+  font-family: "ApercuPro-Regular";
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .end-section {
+    font-size: 36px;
+  }
+  .end-section-text {
+    padding-bottom: 100px;
+  }
+  .end-section-button {
+    max-width: 320px;
+    margin-bottom: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .end-section {
+    font-size: 48px;
+  }
+  .end-section-button {
+    max-width: 420px;
+  }
+}
+
 
 .about-title {
   padding-top: 65px;
