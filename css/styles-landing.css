@@ -332,6 +332,110 @@ a:visited, a:hover, a:active {
   color: #FFFFFF;
 }
 
+.imagine-section {
+  padding-top: 70px;
+  margin-left: 25px;
+  margin-right: 25px;
+  min-height: 350px;
+}
+
+.imagine-section-title {
+  font-family: "ArnhemPro-Bold";
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.imagine-untyped {
+  padding-top: 30px;
+}
+
+.imagine-untyped, .imagine-typed {
+  font-family: "ApercuPro-Bold";
+  font-size: 30px;
+}
+
+.imagine-typed {
+  max-width: 80%;
+}
+
+.typed-cursor{
+    opacity: 1;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFD767;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+
+@media (min-width: 992px) {
+  .imagine-section {
+    margin-left: 50px;
+    margin-right: 50px;
+    min-height: 560px;
+  }
+  .imagine-section-title {
+    font-size: 64px;
+  }
+
+  .imagine-untyped,
+  .imagine-typed,
+  .typed-cursor {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .imagine-section {
+    margin-left: 100px;
+    margin-right: 100px;
+    min-height: 720px;
+  }
+  .imagine-section-title {
+    font-size: 80px;
+  }
+
+  .imagine-untyped,
+  .imagine-typed,
+  .typed-cursor {
+    font-size: 72px;
+  }
+}
+
 .how-it-works {
   padding-top: 65px;
   padding-bottom: 70px;

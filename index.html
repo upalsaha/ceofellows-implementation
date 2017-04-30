@@ -101,6 +101,22 @@
         <i class="fa fa-chevron-down fa-2x hidden-md hidden-lg hidden-xl" aria-hidden="true"></i>
         <i class="fa fa-chevron-down fa-4x hidden-xs hidden-sm" aria-hidden="true"></i>
       </div>
+      <div class="imagine-section">
+        <div class="imagine-section-title">
+          We invite you to imagine &#8722;
+        </div>
+        <span class="imagine-untyped">
+          Imagine if you could learn about
+        </span>
+        <span id="typed-strings">
+          <span>global healthcare from the CEO of Cleveland Clinic.</span>
+          <span>service hospitality from the CEO of Four Seasons.</span>
+          <span>retail and distribution from the CEO of Nordstrom.</span>
+          <span>entrepreneurship from the Managing Partner of Sequoia Capital.</span>
+          <span>creativity from the CEO of the most creative organization on the planet &#8722; Cirque du Soleil.</span>
+        </span>
+        <span class="imagine-typed" id="typed"></span>
+      </div>
       <div id="how-it-works" class="how-it-works">
         <div class="how-it-works-title">
           How It Works
@@ -245,6 +261,36 @@
       </div>
     </div>
   </body>
+  <script src="js/typed.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+
+        Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to null for infinite loop
+            loopCount: null,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        var resetElement = document.querySelector('.reset');
+        if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed')._typed.reset();
+            });
+        }
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+  </script>
   <script language="JavaScript" type="text/javascript">
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
     function openNav() {
