@@ -5,7 +5,7 @@ html, body {
 
 a:visited, a:hover, a:active {
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
   border-bottom:solid 1px transparent;
 }
 
@@ -97,6 +97,7 @@ a:visited, a:hover, a:active {
   z-index: -1;
   width: 100%;
   min-height: 405px;
+  filter: blur(5px);
 }
 
 @media (max-width: 576px) {
@@ -234,6 +235,8 @@ a:visited, a:hover, a:active {
 @media (min-width: 768px) {
   .cosgrove-panel {
     min-height: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .cosgrove-panel-intro {
@@ -261,13 +264,29 @@ a:visited, a:hover, a:active {
 @media (min-width: 1200px) {
   .cosgrove-panel {
     padding-top: 100px;
-    min-height: 600px;
+    min-height: 750px;
     padding-left: 120px;
     padding-right: 120px
   }
 
   .cosgrove-panel-image-wrapper {
     padding-right: 100px
+  }
+  .cosgrove-panel-image-desktop {
+    width: 400px;
+  }
+
+  .cosgrove-panel-intro {
+    font-size: 36px;
+  }
+  .cosgrove-quote-text {
+    font-size: 24px;
+  }
+  .cosgrove-quote-name {
+    font-size: 18px;
+  }
+  .cosgrove-quote-title {
+    font-size: 18px;
   }
 
 }
@@ -446,7 +465,7 @@ a:visited, a:hover, a:active {
   z-index: -1;
   max-height: 280px;
   position: absolute;
-
+  filter: blur(5px);
 }
 
 .partners-picture-text {
@@ -790,4 +809,67 @@ a:visited, a:hover, a:active {
 
 .about-jeff-text > span {
   font-family: "ApercuPro-Bold";
+}
+
+@media (min-width: 768px) {
+  .about-jeff {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-jeff-pic-wrapper {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .about-jeff-text-wrapper {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .about-jeff-name {
+    padding-bottom: 30px;
+  }
+
+  .about-jeff-pic {
+    padding-top: 180px;
+  }
+
+  .about-jeff-icon-wrapper {
+    text-align: center;
+  }
+
+  .about-jeff-icon-link {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-title {
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 36px;
+  }
+
+  .about-divider.yellow-divider {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  .about-jeff-text-wrapper {
+    padding-right: 60px;
+  }
+
+  .about-jeff-pic {
+    /*max-width: 400px;*/
+    padding-top: 215px;
+  }
+
+  .about-jeff-name {
+    font-size: 36px;
+  }
+  .about-jeff-text {
+    font-size: 24px;
+  }
 }
