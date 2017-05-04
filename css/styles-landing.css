@@ -67,6 +67,10 @@ a:visited, a:hover, a:active {
   color: #9B9B9B;
 }
 
+.header-link > a:hover {
+  color: #000000;
+}
+
 .header-login {
   border: 1px solid #979797;
   border-radius: 5px;
@@ -87,8 +91,7 @@ a:visited, a:hover, a:active {
 }
 
 .homepage-banner {
-  /*height: 100%;*/
-  background: rgba(0,0,0,0.50);
+  background: rgba(0,0,0,0.30);
   min-height: 405px;
 }
 
@@ -144,6 +147,7 @@ a:visited, a:hover, a:active {
 }
 
 .homepage-banner-button {
+  padding-top: 2px;
   height: 50px;
   width: 175px;
   color: #FFFFFF;
@@ -175,10 +179,14 @@ a:visited, a:hover, a:active {
 @media (min-width: 992px) {
   .homepage-banner-text {
     font-size: 48px;
+    padding-left: 150px;
+    padding-right: 200px;
+    padding-top: 75px;
   }
 
   .homepage-banner-button-wrapper {
     padding-top: 30px;
+    padding-left: 150px;
   }
 
   .homepage-banner-button {
@@ -187,6 +195,12 @@ a:visited, a:hover, a:active {
     padding-top: 5px;
     font-family: "ApercuPro-Light";
     font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homepage-banner-text {
+    padding-top: 170px;
   }
 }
 
@@ -206,9 +220,17 @@ a:visited, a:hover, a:active {
 .cosgrove-panel-image-mobile {
   padding-top: 30px;
   padding-bottom: 35px;
-  max-width: 280px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
   display:block;
   margin: auto;
+}
+
+@media (min-width: 415px) {
+  .cosgrove-panel-image-mobile {
+    max-width: 415px;
+  }
 }
 
 .cosgrove-quote-text {
@@ -235,8 +257,8 @@ a:visited, a:hover, a:active {
 @media (min-width: 768px) {
   .cosgrove-panel {
     min-height: 500px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .cosgrove-panel-intro {
@@ -263,7 +285,7 @@ a:visited, a:hover, a:active {
 
 @media (min-width: 1200px) {
   .cosgrove-panel {
-    padding-top: 100px;
+    padding-top: 50px;
     min-height: 750px;
     padding-left: 120px;
     padding-right: 120px
@@ -288,7 +310,6 @@ a:visited, a:hover, a:active {
   .cosgrove-quote-title {
     font-size: 18px;
   }
-
 }
 
 .motivational-banner {
@@ -334,9 +355,10 @@ a:visited, a:hover, a:active {
 
 .imagine-section {
   padding-top: 70px;
-  margin-left: 25px;
-  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
   min-height: 350px;
+  background: #FFFFFF;
 }
 
 .imagine-section-title {
@@ -402,10 +424,20 @@ a:visited, a:hover, a:active {
     transition: opacity .25s;
 }
 
+@media (min-width: 768px) {
+  .imagine-section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .yellow-divider.imagine-divider {
+    margin-bottom: 60px;
+  }
+}
+
 @media (min-width: 992px) {
   .imagine-section {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 65px;
+    padding-right: 65px;
     min-height: 560px;
   }
   .imagine-section-title {
@@ -421,8 +453,8 @@ a:visited, a:hover, a:active {
 
 @media (min-width: 1200px) {
   .imagine-section {
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 140px;
+    padding-right: 140px;
     min-height: 720px;
   }
   .imagine-section-title {
@@ -475,15 +507,10 @@ a:visited, a:hover, a:active {
     font-size: 48px;
   }
 
-  .how-it-works > .yellow-divider {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
   .how-it-works-section-wrapper {
     display: flex;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
   .how-it-works-text {
     font-size: 24px;
@@ -499,6 +526,7 @@ a:visited, a:hover, a:active {
 .bullet-points-list > li {
   padding-bottom: 36px;
   padding-right: 15px;
+  padding-left: 10px;
   width: 100%;
   list-style: url("../icons/solid_white.svg");
   color: #FFFFFF;
@@ -528,8 +556,20 @@ a:visited, a:hover, a:active {
 
 .partners {
   padding-top: 53px;
-
 }
+
+.partners > .yellow-divider {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .partners > .yellow-divider {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
 .partners-title {
   font-family: "ApercuPro-Bold";
   font-size: 24px;
@@ -775,8 +815,8 @@ a:visited, a:hover, a:active {
 @media (min-width: 992px) {
   .alpine-section {
     padding-bottom: 150px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .alpine-section-carousel {
     float: left;
@@ -817,6 +857,10 @@ a:visited, a:hover, a:active {
   font-size: 18px;
 }
 
+.end-section > a:hover {
+  text-decoration: underline;
+}
+
 .end-section-text {
   padding-bottom: 50px;
 }
@@ -846,6 +890,8 @@ a:visited, a:hover, a:active {
 @media (min-width: 992px) {
   .end-section {
     font-size: 36px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .end-section-text {
     padding-bottom: 100px;
@@ -975,5 +1021,12 @@ a:visited, a:hover, a:active {
   }
   .about-jeff-text {
     font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .yellow-divider {
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }

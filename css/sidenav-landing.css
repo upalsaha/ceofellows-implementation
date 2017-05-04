@@ -18,12 +18,12 @@
     font-size: 24px;
     color: #FFFFFF;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
-/*.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}*/
+.sidenav a:hover {
+  border-bottom: none;
+}
 
 .sidenav .closebtn {
     position: absolute;
