@@ -1006,13 +1006,14 @@ a:visited, a:hover, a:active {
   padding-right: 20px;
 }
 
-.about-jeff {
+.about {
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 25px;
+  padding-bottom: 50px;
 }
 
-.about-jeff-pic {
+.about-pic {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -1021,61 +1022,61 @@ a:visited, a:hover, a:active {
   filter: grayscale(100%);
 }
 
-.about-jeff-name {
+.about-name {
   padding-top: 27px;
   font-family: "ApercuPro-Bold";
   font-size: 28px;
 }
 
-.about-jeff-icon-wrapper {
+.about-icon-wrapper {
   padding-top: 27px;
   padding-bottom: 20px;
 }
 
-.about-jeff-icon-link {
+.about-icon-link {
   display: inline;
   padding-right: 15px;
 }
 
-.about-jeff-text {
+.about-text {
   font-family: "ApercuPro-Regular";
   font-size: 18px;
   padding-bottom: 20px;
 }
 
-.about-jeff-text > span {
+.about-text > span {
   font-family: "ApercuPro-Bold";
 }
 
 @media (min-width: 768px) {
-  .about-jeff {
+  .about {
     display: flex;
     flex-direction: row;
   }
 
-  .about-jeff-pic-wrapper {
+  .about-pic-wrapper {
     flex-grow: 1;
     flex-basis: 0;
   }
 
-  .about-jeff-text-wrapper {
+  .about-text-wrapper {
     flex-grow: 1;
     flex-basis: 0;
   }
 
-  .about-jeff-name {
+  .about-name {
     padding-bottom: 30px;
   }
 
-  .about-jeff-pic {
+  .about-pic {
     padding-top: 180px;
   }
 
-  .about-jeff-icon-wrapper {
+  .about-icon-wrapper {
     text-align: center;
   }
 
-  .about-jeff-icon-link {
+  .about-icon-link {
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -1093,19 +1094,19 @@ a:visited, a:hover, a:active {
     margin-right: 75px;
   }
 
-  .about-jeff-text-wrapper {
+  .about-text-wrapper {
     padding-right: 60px;
   }
 
-  .about-jeff-pic {
+  .about-pic {
     /*max-width: 400px;*/
     padding-top: 215px;
   }
 
-  .about-jeff-name {
+  .about-name {
     font-size: 36px;
   }
-  .about-jeff-text {
+  .about-text {
     font-size: 24px;
   }
 }

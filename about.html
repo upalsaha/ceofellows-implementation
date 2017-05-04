@@ -9,17 +9,17 @@
   </head>
 
   <body>
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav ">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
         <div onclick="openNav()" class="header-hamburger">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
       </a>
-      <a onclick="closeNav()" href="index.html#how-it-works">How it Works</a>
-      <a onclick="closeNav()" href="index.html#partners">Our Partners</a>
-      <a onclick="closeNav()" href="#">For Companies</a>
+      <a onclick="closeNav()" href="#how-it-works">How it Works</a>
+      <a onclick="closeNav()" href="#partners">Our Partners</a>
+      <a onclick="closeNav()" data-toggle="modal" data-target="#companyModal">For Companies</a>
       <a onclick="closeNav()" href="about.html">About Us</a>
-      <a onclick="closeNav()" href="#">Login</a>
+      <a onclick="closeNav()" data-toggle="modal" data-target="#loginModal">Login</a>
       <div class="copyright">&#9400; 2017 - ceofellows.com. All Rights Reserved.</div>
     </div>
 
@@ -35,19 +35,72 @@
         </div>
         <div class="header-links">
           <div class="header-link">
-            <a href="index.html#how-it-works">How it Works</a>
+            <a href="#how-it-works">How it Works</a>
           </div>
           <div class="header-link">
-            <a href="index.html#partners">Our Partners</a>
+            <a href="#partners">Our Partners</a>
           </div>
           <div class="header-link">
-            <a href="#">For Companies</a>
+            <a data-toggle="modal" data-target="#companyModal">For Companies</a>
           </div>
           <div class="header-link">
             <a href="about.html">About Us</a>
           </div>
           <div class="header-link header-login">
-            <a href="#">Log In</a>
+            <a data-toggle="modal" data-target="#loginModal">Log In</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="companyModal" tabindex="-1" role="dialog" aria-labelledby="Company" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-title1">
+              CEO <span>Fellows</span>
+            </div>
+            <div class="modal-title2">
+              Register
+            </div>
+            <div class="modal-text">
+              Thank you for your interest!<br>
+              CEO Fellows helps companies develop early relationships with the best up-and-coming leaders from top schools including Harvard, Princeton, Virginia, Vanderbilt, Swarthmore, Brown, RISD, and Berkeley.<br><br>
+              Please enter your information and someone will be in touch shortly.
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="name" class="form-control" id="registername" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="registeremail" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <input type="company" class="form-control" id="registercompany" placeholder="Organization or Company Name">
+              </div>
+              <button type="submit" class="btn btn-primary modal-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Log In" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-title1">
+              CEO <span>Fellows</span>
+            </div>
+            <div class="modal-title2">
+              Log In
+            </div>
+            <div class="modal-text">
+              Welcome back!
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="registeremail" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="registerpassword" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary modal-submit">Enter</button>
+            </form>
           </div>
         </div>
       </div>
@@ -55,57 +108,108 @@
         Our founders have helped companies strengthen their leadership pipeline for the last 25 years.
       </div>
       <hr class="yellow-divider about-divider">
-      <div class="about-jeff">
-        <div class="about-jeff-pic-wrapper">
-          <img class="about-jeff-pic" src="photos/JeffCohn_lowresPlaceholder.jpg"/>
-          <div class="about-jeff-icon-wrapper hidden-xs">
-            <div class="about-jeff-icon-link">
+      <div class="about">
+        <div class="about-pic-wrapper">
+          <img class="about-pic" src="photos/JeffCohn_lowresPlaceholder.jpg"/>
+          <div class="about-icon-wrapper hidden-xs">
+            <div class="about-icon-link">
               <a href="mailto:jeff@ceofellows.com">
-                <img class="about-jeff-icon" src="icons/close-envelope.svg"/>
+                <img class="about-icon" src="icons/close-envelope.svg"/>
               </a>
             </div>
-            <div class="about-jeff-icon-link">
+            <div class="about-icon-link">
               <a href="https://www.linkedin.com/in/jeffrey-cohn-39191">
-                <img class="about-jeff-icon" src="icons/linkedin-logo.svg"/>
+                <img class="about-icon" src="icons/linkedin-logo.svg"/>
               </a>
             </div>
           </div>
         </div>
-        <div class="about-jeff-text-wrapper">
-          <div class="about-jeff-name">
+        <div class="about-text-wrapper">
+          <div class="about-name">
             Jeff Cohn<br>
             Co-Founder<br>
             CEO
           </div>
-          <div class="about-jeff-icon-wrapper hidden-sm hidden-md hidden-lg hidden-xl">
-              <div class="about-jeff-icon-link">
+          <div class="about-icon-wrapper hidden-sm hidden-md hidden-lg hidden-xl">
+              <div class="about-icon-link">
                 <a href="mailto:jeff@ceofellows.com">
-                  <img class="about-jeff-icon" src="icons/close-envelope.svg"/>
+                  <img class="about-icon" src="icons/close-envelope.svg"/>
                 </a>
               </div>
-              <div class="about-jeff-icon-link">
+              <div class="about-icon-link">
                 <a href="https://www.linkedin.com/in/jeffrey-cohn-39191">
-                  <img class="about-jeff-icon" src="icons/linkedin-logo.svg"/>
+                  <img class="about-icon" src="icons/linkedin-logo.svg"/>
                 </a>
               </div>
           </div>
-          <div class="about-jeff-text">
+          <div class="about-text">
             <span>I grin when I hear</span> people brag that they became a leader after an "intensive" two week class.  It takes months or years to develop leadership skills, like resilience, judgment, and EQ.
           </div>
-          <div class="about-jeff-text">
+          <div class="about-text">
             <span>Selling shoes</span> at my dad's shoe store in Kentucky, when I was 14 years old, really helped me develop an ownership mentality and focus on results.  Look for weird, unique opportunities to develop your leadership skills.
           </div>
-          <div class="about-jeff-text">
+          <div class="about-text">
             <span>Every time I mentor a young student,</span> I learn just as much as he or she does...otherwise I consider the relationship a total failure.
           </div>
-          <div class="about-jeff-text">
-            <span>Empathy is a key soft skill,</span>  I learn just as much as he or she does...otherwise I consider the relationship a total failure.
+          <div class="about-text">
+            <span>Empathy is a key soft skill,</span> but too much empathy can get in the way of making tough decisions.
           </div>
-          <div class="about-jeff-text">
+          <div class="about-text">
             <span>Although I always root against Duke basketball,</span> I must admit, I loved spending time with Coach K and learning more about his leadership philosophy.
           </div>
-          <div class="about-jeff-text">
-            There's <span>no such ting as a perfect leader.</span> The trick is finding and fixing your blindspots and red flags, because others certainly will.
+          <div class="about-text">
+            There's <span>no such thing as a perfect leader.</span> The trick is finding and fixing your blindspots and red flags, because others certainly will.
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="about-pic-wrapper">
+          <img class="about-pic" src="photos/Andy_bw.jpg"/>
+          <div class="about-icon-wrapper hidden-xs">
+            <div class="about-icon-link">
+              <a href="mailto:andy@ceofellows.com">
+                <img class="about-icon" src="icons/close-envelope.svg"/>
+              </a>
+            </div>
+            <div class="about-icon-link">
+              <a href="https://www.linkedin.com/in/smithy-us/">
+                <img class="about-icon" src="icons/linkedin-logo.svg"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-wrapper">
+          <div class="about-name">
+            Andy Smith<br>
+            Co-Founder<br>
+            CTO
+          </div>
+          <div class="about-icon-wrapper hidden-sm hidden-md hidden-lg hidden-xl">
+              <div class="about-icon-link">
+                <a href="mailto:jeff@ceofellows.com">
+                  <img class="about-icon" src="icons/close-envelope.svg"/>
+                </a>
+              </div>
+              <div class="about-icon-link">
+                <a href="https://www.linkedin.com/in/jeffrey-cohn-39191">
+                  <img class="about-icon" src="icons/linkedin-logo.svg"/>
+                </a>
+              </div>
+          </div>
+          <div class="about-text">
+            <span>I love building teams.</span> I love the shared experience, the lingua franca that develops when workign towards the common endeavour.
+          </div>
+          <div class="about-text">
+            <span>One thing</span> I wish the younger me had known - the 10,000 hour rule.
+          </div>
+          <div class="about-text">
+            <span>Coding is an artistic effort.</span> The constant creation, teardown, and rebuild of logical structures in the mind. In that space you can juggle seven house sized balls at once. It is addictive.
+          </div>
+          <div class="about-text">
+            <span>My favorite quote:</span> "One logical slip and an entire scientific edifice comes tumbling down" - Robert M. Pirsig, 'Zen and the Art of Motorcycle Maintenance'
+          </div>
+          <div class="about-text">
+            <span>My second favorite quote:</span> "Worse things happen at sea" - A very wise man
           </div>
         </div>
       </div>
