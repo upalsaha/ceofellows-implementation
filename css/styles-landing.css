@@ -449,6 +449,10 @@ a:visited, a:hover, a:active {
   .typed-cursor {
     font-size: 60px;
   }
+
+  .yellow-divider.imagine-divider {
+    margin-top: 60px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -551,6 +555,76 @@ a:visited, a:hover, a:active {
   .bullet-points-list > li > span {
     font-family: "ApercuPro-Bold";
     font-size: 20px;
+  }
+}
+
+.testimonials {
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.testimonials-intro {
+  font-family: "ApercuPro-Medium";
+  font-size: 36px;
+  padding-bottom: 50px;
+}
+
+.testimonial-row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.testimonial-section {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.testimonial-section.left {
+  padding-right: 30px;
+}
+
+.testimonial-section-image {
+  height: 190px;
+  width: auto;
+  float: left;
+  padding-right: 30px;
+}
+
+.testimonial-section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-section-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "ApercuPro-Light";
+  font-size: 14px;
+}
+
+.testimonial-section-name-bold {
+  font-family: "ApercuPro-Regular";
+}
+
+.testimonial-section-quote {
+  font-family: "ArnhemPro-BlondItalic";
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 1200px) {
+  .testimonial-section-image {
+    padding-right: 50px;
+  }
+
+  .testimonial-section.left {
+    padding-right: 50px;
   }
 }
 
@@ -857,8 +931,20 @@ a:visited, a:hover, a:active {
   font-size: 18px;
 }
 
+.end-section > a {
+  color: #000000;
+}
+
 .end-section > a:hover {
   text-decoration: underline;
+}
+
+.end-section > a:active {
+  color: #FFFFFF;
+}
+
+.end-section > a:visited {
+  color: #000000;
 }
 
 .end-section-text {
@@ -1029,4 +1115,35 @@ a:visited, a:hover, a:active {
     margin-left: 60px;
     margin-right: 60px;
   }
+}
+
+.modal-content {
+  padding: 80px;
+  text-align: center;
+  font-family: "ApercuPro-Light";
+}
+
+.modal-title1 {
+  font-size: 18px;
+}
+
+.modal-title1 > span {
+  font-family: "ApercuPro-Bold";
+}
+
+.modal-title2 {
+  font-size: 36px;
+  padding-bottom: 12px;
+}
+
+.modal-text {
+  font-size: 14px;
+  padding-bottom: 35px;
+}
+
+.modal-submit {
+  width: 100%;
+  background-color: #FFD767;
+  color: #4A4A4A;
+  border: none;
 }

@@ -22,9 +22,9 @@
       </a>
       <a onclick="closeNav()" href="#how-it-works">How it Works</a>
       <a onclick="closeNav()" href="#partners">Our Partners</a>
-      <a onclick="closeNav()" href="#">For Companies</a>
+      <a onclick="closeNav()" data-toggle="modal" data-target="#companyModal">For Companies</a>
       <a onclick="closeNav()" href="about.html">About Us</a>
-      <a onclick="closeNav()" href="#">Login</a>
+      <a onclick="closeNav()" data-toggle="modal" data-target="#loginModal">Login</a>
       <div class="copyright">&#9400; 2017 - ceofellows.com. All Rights Reserved.</div>
     </div>
     <div id="main">
@@ -45,13 +45,13 @@
             <a href="#partners">Our Partners</a>
           </div>
           <div class="header-link">
-            <a href="#">For Companies</a>
+            <a data-toggle="modal" data-target="#companyModal">For Companies</a>
           </div>
           <div class="header-link">
             <a href="about.html">About Us</a>
           </div>
           <div class="header-link header-login">
-            <a href="#">Log In</a>
+            <a data-toggle="modal" data-target="#loginModal">Log In</a>
           </div>
         </div>
       </div>
@@ -63,11 +63,64 @@
           Our network of CEOs, iconic leaders, and visionaries will help you develop critical leadership skills - while you're still in school.
         </div>
         <div class="homepage-banner-button-wrapper">
-          <a href="#">
+          <a data-toggle="modal" data-target="#registerModal">
             <div class="homepage-banner-button">
               Apply Now
             </div>
           </a>
+        </div>
+      </div>
+      <div class="modal fade" id="companyModal" tabindex="-1" role="dialog" aria-labelledby="Company" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-title1">
+              CEO <span>Fellows</span>
+            </div>
+            <div class="modal-title2">
+              Register
+            </div>
+            <div class="modal-text">
+              Thank you for your interest!<br>
+              CEO Fellows helps companies develop early relationships with the best up-and-coming leaders from top schools including Harvard, Princeton, Virginia, Vanderbilt, Swarthmore, Brown, RISD, and Berkeley.<br><br>
+              Please enter your information and someone will be in touch shortly.
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="name" class="form-control" id="registername" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="registeremail" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <input type="company" class="form-control" id="registercompany" placeholder="Organization or Company Name">
+              </div>
+              <button type="submit" class="btn btn-primary modal-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Log In" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-title1">
+              CEO <span>Fellows</span>
+            </div>
+            <div class="modal-title2">
+              Log In
+            </div>
+            <div class="modal-text">
+              Welcome back!
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="registeremail" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="registerpassword" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary modal-submit">Enter</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="imagine-section">
@@ -153,6 +206,68 @@
           <li><span>Expand your network of emerging leaders and future stars, destined to make a positive impact.</span></li>
         </ul>
       </div>
+      <div class="testimonials hidden-xs hidden-sm">
+        <div class="testimonials-intro">
+          Hear from some of our current and past fellows on their experience and exposure to top-notch CEO's and Industry Leaders.
+        </div>
+        <div class="testimonial-row">
+          <div class="testimonial-section left">
+            <img class="testimonial-section-image" src="photos/GrahamTurk.JPG"/>
+            <div class="testimonial-section-text">
+              <div class="testimonial-section-quote">
+                "CEO Fellows has provided me with a platform to engage with an incredible community of students who are passionate about leadership development. Through the CEO conferences, I have learned the value of gaining management experience early in my career, constantly seeking feedback from colleagues, and understanding the "big picture" of how an organization operates."
+              </div>
+              <div class="testimonial-section-name">
+                <span class="testimonial-section-name-bold">Graham Turk</span>
+                <span>Princeton University, '17</span>
+                <span>Computer Science</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-section">
+            <img class="testimonial-section-image" src="photos/Emily.jpg"/>
+            <div class="testimonial-section-text">
+              <div class="testimonial-section-quote">
+                "The CEO fellows program has introduced me to some of the most accomplished yet personable people in the world. I have learned more, in regards to leadership, from my conversations with the CEOs in this program than I ever have before."
+              </div>
+              <div class="testimonial-section-name">
+                <span class="testimonial-section-name-bold">Emily Bland</span>
+                <span>Vanderbilt University, '18</span>
+                <span>Sociology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-row">
+          <div class="testimonial-section left">
+            <img class="testimonial-section-image" src="photos/HenryLi.png"/>
+            <div class="testimonial-section-text">
+              <div class="testimonial-section-quote">
+                "CEO Fellows is an amazing privilege to be a part of. I couldn't have made the connections I did with other student leaders across the country and the CEOs of top companies in the world anywhere else. I learned about how the Cleveland Clinic, Tyson Foods, and Cirque du Soleil are run from the inside and what it takes to lead such organizations and how to build those skills."
+              </div>
+              <div class="testimonial-section-name">
+                <span class="testimonial-section-name-bold">Henry Li</span>
+                <span>Harvard University, '16</span>
+                <span>History and Literature, East Asian Studies</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-section">
+            <img class="testimonial-section-image" src="photos/MinsooThigpen.png"/>
+            <div class="testimonial-section-text">
+              <div class="testimonial-section-quote">
+                "The CEO fellows program has introduced me to some of the most accomplished yet personable people in the world. I have learned more, in regards to leadership, from my conversations with the CEOs in this program than I ever have before."
+              </div>
+              <div class="testimonial-section-name">
+                <span class="testimonial-section-name-bold">Minsoo Thigpen</span>
+                <span>Brown University | Rhode Island<br>
+                School of Design Dual Degree, '18</span>
+                <span>Applied Mathematics | Painting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="partners" class="partners">
         <div class="partners-title">
           Our Partners include some of the best minds and practitioners helping to create high-impact leadership development roadmaps for our fellows.
@@ -160,7 +275,7 @@
         <hr class="yellow-divider">
         <div class="partners-description">
           <p>The CEO fellows team has over 25 years experience with CEOs and Leaders around the world.</p>
-          <p>We are advisors to boards of directors executives and top CEOs.</p>
+          <p>We are advisors to boards of directors, executives, and top CEOs.</p>
         </div>
         <div class="partners-picture-wrapper">
           <div class="partners-picture">
@@ -245,11 +360,39 @@
         <div class="end-section-text">
           If all these things sound like you, we'd love to hear from you. The CEO Fellowship is 100% free.
         </div>
-        <a href="#">
+        <a data-toggle="modal" data-target="#registerModal">
           <div class="end-section-button">
             Get a Fellowship.
           </div>
         </a>
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-title1">
+                CEO <span>Fellows</span>
+              </div>
+              <div class="modal-title2">
+                Register
+              </div>
+              <div class="modal-text">
+                Thank you for your interest!<br>
+                CEO Fellows is currently in a closed launch pilot program. Please register you details, and we will get back to you soon.
+              </div>
+              <form>
+                <div class="form-group">
+                  <input type="name" class="form-control" id="registername" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="registeremail" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <input type="school" class="form-control" id="registerschool" placeholder="School Name">
+                </div>
+                <button type="submit" class="btn btn-primary modal-submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
         <div class="end-section-copyright hidden-xs hidden-sm">
           &#9400; 2017 - ceofellows.com. All Rights Reserved.
         </div>
