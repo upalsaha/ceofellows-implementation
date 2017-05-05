@@ -93,6 +93,7 @@ a:visited, a:hover, a:active {
 .homepage-banner {
   background: rgba(0,0,0,0.30);
   min-height: 405px;
+  overflow: hidden;
 }
 
 .homepage-banner-image {
@@ -616,6 +617,32 @@ a:visited, a:hover, a:active {
   font-family: "ArnhemPro-BlondItalic";
   font-size: 14px;
   padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .testimonials-intro {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .testimonial-row {
+    flex-direction: column;
+  }
+
+  .testimonial-section.left {
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .testimonial-section-image {
+    display: block;
+    float: none;
+    width: 80%;
+    height: auto;
+    padding-right: 0;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1200px) {
