@@ -94,6 +94,7 @@ a:visited, a:hover, a:active {
   background: rgba(0,0,0,0.30);
   min-height: 405px;
   overflow: hidden;
+  position: relative;
 }
 
 .homepage-banner-image {
